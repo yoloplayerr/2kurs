@@ -1,6 +1,5 @@
 package lab0;
 
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -15,18 +14,18 @@ public class Lab0 {
 	static final String FILE_NAME = "lab.txt";
 
 	public static void main(String[] args) {
-		File file=new File(FILE_NAME);
-		System.out.println("Размер данных в файле: " +file.length() + " байт");
+		File file = new File(FILE_NAME);
+		System.out.println("Размер данных в файле: " + file.length() + " байт");
 		tablePrint(FILE_NAME);
-	
-	} 
+
+	}
 
 	public static ArrayList<String> getText(String fileName) {
 
 		ArrayList<String> text = new ArrayList<>();
 		try {
 			String str = null;
-			BufferedReader br = new BufferedReader(new FileReader(fileName));			
+			BufferedReader br = new BufferedReader(new FileReader(fileName));
 			while ((str = br.readLine()) != null) {
 
 				text.addAll(Arrays.asList(str.split(" ")));
@@ -69,7 +68,7 @@ public class Lab0 {
 			ArrayList<Character> alph = new ArrayList<Character>();
 			for (int i = 0; i < word.length(); i++) {
 				char symb = word.charAt(i);
-				if (alph.contains(symb)==false) {
+				if (alph.contains(symb) == false) {
 					alph.add(symb);
 				}
 			}
@@ -84,7 +83,7 @@ public class Lab0 {
 		for (int i = 0; i < word.length(); i++) {
 			char symb = word.charAt(i);
 
-			if (alph.contains(symb)==false) {
+			if (alph.contains(symb) == false) {
 				alph.add(symb);
 			}
 		}
