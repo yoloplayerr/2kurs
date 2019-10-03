@@ -1,7 +1,12 @@
 package lab2;
 
-public class Dot2D {
+public class Point {
 	private float x,y;
+	
+	public Point(float x, float y) {
+        this.x = x;
+        this.y = y;
+    }
 
 	public float getX() {
 		return x;
@@ -18,7 +23,7 @@ public class Dot2D {
 	public void setY(float y) {
 		this.y = y;
 	}
-	public double getDistance(Dot2D d){
+	public double getDistance(Point d){
         return Math.sqrt(Math.pow(this.x - d.getX(), 2) + Math.pow(this.y - d.getY(),2));
     }
 }
