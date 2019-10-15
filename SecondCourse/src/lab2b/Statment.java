@@ -17,6 +17,6 @@ public enum Statment {
 	}
 
 	public boolean isLive() {
-		return this == LIVE || this == DEAD;
+		return (this == LIVE) ? true : false;
 	}
 }
