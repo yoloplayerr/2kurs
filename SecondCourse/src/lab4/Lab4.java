@@ -28,10 +28,22 @@ public class Lab4 {
 						tmp=b1.get(i);
 						tmpIndex=i;
 					}
+			
 				}
 				System.out.println(b1);	
 				System.out.println((b1.get(tmpIndex))==tmp);	
-		
+		//ГЭ
+				ArrayList<Integer> gV=new ArrayList<>();
+				String regexG = "(?!0|\\.00)[0-9]";
+				String g="123842034wklfjsdbf891234oksdf";
+				Pattern ptg = Pattern.compile(regexG);
+				Matcher matcherg = ptg.matcher(g);
+				while (matcherg.find()) {
+					gV.add(Integer.valueOf(b.substring(matcher.start(), matcher.end())));
+				}
+			System.out.print(gV);	
+				
 	}
+	
 
 }
