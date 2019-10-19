@@ -37,7 +37,7 @@ public class MainAutorsXmlStAX {
 				if (xmlEvent.isStartElement()) {
 					StartElement startElement = xmlEvent.asStartElement();
 					if (startElement.getName().getLocalPart().equals("author")) {
-
+							
 						pers = new Autor();
 						// Получаем атрибуты для каждого элемента Student
 						Attribute persAttr = startElement.getAttributeByName(new QName("name"));
@@ -45,7 +45,7 @@ public class MainAutorsXmlStAX {
 							pers.setAutorName(persAttr.getValue());
 						}
 
-					} else if (startElement.getName().getLocalPart().equals("book")) {
+					} if (startElement.getName().getLocalPart().equals("book")) {
 						Attribute persAttr = startElement.getAttributeByName(new QName("name"));
 						if (persAttr != null) {
 							bookName.add(persAttr.getValue());

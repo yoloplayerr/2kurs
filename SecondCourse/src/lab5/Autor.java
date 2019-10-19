@@ -6,7 +6,9 @@ public class Autor {
 	private String autorName;
     private ArrayList<String> bookName=new ArrayList<>();
     private ArrayList<String> pages;
- 
+    public Autor(String auto) {
+    	autorName=auto;
+    }
 
     public String getAutorName() {
 		return autorName;
@@ -15,10 +17,6 @@ public class Autor {
 	public void setAutorName(String autorName) {
 		this.autorName = autorName;
 	}
-
-	
-
-	
 
 	public ArrayList<String> getBookName() {
 		return bookName;

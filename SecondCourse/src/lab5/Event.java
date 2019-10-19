@@ -22,4 +22,12 @@ public class Event {
 	public void setResult(String result) {
 		this.result = result;
 	}
+	
+	
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Место "+place+" Год "+year+" \n";
+	}
 }
