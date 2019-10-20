@@ -153,7 +153,7 @@ public class Lab4 {
 	 public static void ninth(String string){
 	        Pattern ptg = Pattern.compile("[\\w_]{8,}");
 	        Matcher matcher = ptg.matcher(string);
-	        boolean up=false,low=false,dig=false;
+	        boolean big=false,low=false,d=false;
 	        if(!matcher.find()) {
 	        	System.out.println(false);
 	        }
@@ -162,16 +162,16 @@ public class Lab4 {
 	            for (int i = matcher.start(); i < matcher.end(); i++) {
 	                char c = string.charAt(i);
 	                if(Character.isUpperCase(c)) {
-	                	up=true;
+	                	big=true;
 	                }
 	                else if(Character.isLowerCase(c)) {
 	                	low=true;
 	                }
 	                else if(Character.isDigit(c)) {
-	                	dig=true;
+	                	d=true;
 	                }
 	            }
-	            System.out.println(up&low&dig);
+	            System.out.println(big&low&d);
 	        }
 	    }
 
